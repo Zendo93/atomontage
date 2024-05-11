@@ -1,0 +1,11 @@
+{
+  "name": "atomontage",
+  "version": "1.0.0",
+  "scripts": {
+    "compileTailwindcss": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
+    "dev": "php -t src -S localhost:8000"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
