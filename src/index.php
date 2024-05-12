@@ -89,8 +89,49 @@
             </div>
         </div>
     </form>
+    <div class="p-6">
+        <table class="table-auto m-auto">
+            <thead>
+                <tr>
+                <th class="px-4 py-2">Title</th>
+                <th class="px-4 py-2">Author</th>
+                <th class="px-4 py-2">Views</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td class="border px-4 py-2">Intro to CSS</td>
+                <td class="border px-4 py-2">Adam</td>
+                <td class="border px-4 py-2">858</td>
+                </tr>
+                <tr class="bg-gray-100">
+                <td class="border px-4 py-2">A Long and Winding Tour of the History of UI Frameworks and Tools and the Impact on Design</td>
+                <td class="border px-4 py-2">Adam</td>
+                <td class="border px-4 py-2">112</td>
+                </tr>
+                <tr>
+                <td class="border px-4 py-2">Intro to JavaScript</td>
+                <td class="border px-4 py-2">Chris</td>
+                <td class="border px-4 py-2">1,280</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
   <?php
+    require '../vendor/autoload.php';
     echo "Hello World!";
+    $database = new Dibi\Connection([
+        'driver'   => 'mysqli',
+        'host'     => 'localhost',
+        'port'     =>  4000,     
+        'username' => 'root',
+        'password' => 'admin',
+        'database' => 'atomontage',
+    ]);
+    
+    $result = $database->query('SELECT * FROM user');
+    $all = $result->fetchAll();
+    echo  $all[0]['first_name'];
     ?>
 </body>
 </html>
