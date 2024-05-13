@@ -18,7 +18,7 @@
                 First Name
             </label>
             <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane">
-            <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+            <!--<p class="text-red-500 text-xs italic">Please fill out this field.</p>-->
             </div>
             <div class="w-full md:w-1/2 px-3">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
@@ -67,7 +67,7 @@
         </div>
         <div class="flex flex-wrap -mx-3 mb-2 relative">
             <div class="absolute right-0 px-3">
-                <a href="#" class="inline-block bg-teal-500 text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-teal-600 mt-4 lg:mt-0">Send</a>
+                <a id="sendUserBtn" href="#" class="inline-block bg-teal-500 text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:bg-teal-600 mt-4 lg:mt-0">Send</a>
             </div>
         </div>
     </form>
