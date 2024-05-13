@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
   <script src="./js/jquery-3.7.1.min.js"></script>
+  <script src="./js/index.js"></script>
 </head>
 <body>
     <?php
